@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ProfesorController</servlet-name>
+        <servlet-class>controller.ProfesorController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfesorController</servlet-name>
+        <url-pattern>/ProfesorController</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DetalleController</servlet-name>
+        <servlet-class>controller.StoreController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DetalleController</servlet-name>
+        <url-pattern>/DetalleController</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>StoreController</servlet-name>
+        <servlet-class>controller.StoreController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StoreController</servlet-name>
+        <url-pattern>/StoreController</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
